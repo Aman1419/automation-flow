@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debounce Search</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 420px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+    input:focus {
+      border-color: #0066cc;
+      box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+    }
+    #results {
+      margin-top: 0.75rem;
+      min-height: 2rem;
+    }
+    .result-item {
+      padding: 0.5rem 0.75rem;
+      background: #f5f5f5;
+      border-radius: 4px;
+      margin-bottom: 0.25rem;
+    }
+    .result-item:empty,
+    .no-results {
+      color: #666;
+      font-style: italic;
+    }
+    .hint {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Debounce Search</h1>
+  <p class="hint">Type to search. Results update after you stop typing for 400ms.</p>
+  <input type="text" id="searchInput" placeholder="Search items..." autocomplete="off" />
+  <div id="results"></div>
+
+  <script src="input-functionality.js"></script>
+</body>
+</html>
