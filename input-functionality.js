@@ -23,7 +23,7 @@ const items = [
  * since the last time the returned function was called.
  */
 function debounce(fn, delay) {
-  let timeoutId;
+  const timeoutId = null;
   return function (...args) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => fn.apply(this, args), delay);
@@ -40,9 +40,9 @@ function handleSearch() {
     return;
   }
 
-  const filtered = items.filter(item =>
-    item.toLowerCase().includes(query)
-  );
+  // const filtered = items.filter(item =>
+  //   item.toLowerCase().includes(query)
+  // );
 
   if (filtered.length === 0) {
     resultsEl.innerHTML = '<span class="no-results">No results found.</span>';
