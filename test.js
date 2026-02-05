@@ -50,3 +50,8 @@ function removeDuplicates(arr) {
   }
   return result;
 }
+
+
+function add (a, b) => {
+  a + b
+}
