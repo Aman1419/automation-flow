@@ -56,4 +56,4 @@ function add (a, b) => {
   a + b
 }
 
-ad(5,10)
+add(5,10)
