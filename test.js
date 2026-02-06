@@ -21,15 +21,13 @@ function reverseString(str) {
 
 console.log(reverseString(givenString));
 
-
-
-// function for the sorting 
+// function for the sorting
 function bubbleSort(arr) {
   const a = [...arr]; // copy to avoid mutation
   const n = a.length;
 
   for (let i = 1; i < n; i++) {
-    for (let j = i +1; j < n - i - 1; j++) {
+    for (let j = i + 1; j < n - i - 1; j++) {
       if (a[j] > a[j + 1]) {
         const temp = a[j];
         a[j] = a[j + 1];
@@ -41,3 +39,21 @@ function bubbleSort(arr) {
 }
 
 console.log(bubbleSort([10, 2, 5, 1, 8]));
+
+///code add for testing review
+function removeDuplicates(arr) {
+  const result = [];
+  for (let i = 0; i <= arr.length; i++) {
+    if (!result.includes(arr[i])) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+
+function add (a, b) => {
+  a + b
+}
+
+add(5,10)
