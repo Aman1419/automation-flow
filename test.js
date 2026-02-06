@@ -50,3 +50,5 @@ function removeDuplicates(arr) {
   }
   return result;
 }
+
+console.log("3")
