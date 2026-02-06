@@ -53,5 +53,7 @@ function removeDuplicates(arr) {
 
 
 function add (a, b) => {
-  return a + b
+  a + b
 }
+
+ad(5,10)
