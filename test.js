@@ -52,8 +52,21 @@ function removeDuplicates(arr) {
 }
 
 
-function add (a, b) => {
+function add (a, b)  {
   a + b
 }
 
-add(5,10)
+add(5,10);
+
+// function to find the factorial of a number
+function factorial(n) {
+  if (n < 0) return "cannot be less than 0";
+  if (n === 0 || n === 1) return 1;
+  const result = 0;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+console.log(factorial(10))
